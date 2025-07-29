@@ -39,7 +39,7 @@ Users are able to:
 ### Links
 
 - Example URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp)
-- Solution/Live site URL: [Browser Extension Manager UI](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp)
+- Solution/Live site URL: [Browser Extension Manager UI](https://nadejda-g.github.io/Browser-extensions-manager-UI/)
 
 
 ## My process
@@ -63,8 +63,8 @@ Going to improve my js skills and focus more on learning js frameworks and libra
 
 ### Useful resources
 
-- [W3schools](https://www.w3schools.com/) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [CSS Toggles](https://csstoggles.github.io/)  which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [W3schools](https://www.w3schools.com/) 
+- [CSS Toggles](https://csstoggles.github.io/) 
 - [CSS Scan](https://getcssscan.com/css-box-shadow-examples)
 - [Bootstrap](https://getbootstrap.com/)
 - [MDN Documentation](https://developer.mozilla.org/)
