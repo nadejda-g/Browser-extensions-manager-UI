@@ -63,8 +63,8 @@ Going to improve my js skills and focus more on learning js frameworks and libra
 
 ### Useful resources
 
-- [W3schools](https://www.w3schools.com/) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [CSS Toggles](https://csstoggles.github.io/)  which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [W3schools](https://www.w3schools.com/) 
+- [CSS Toggles](https://csstoggles.github.io/) 
 - [CSS Scan](https://getcssscan.com/css-box-shadow-examples)
 - [Bootstrap](https://getbootstrap.com/)
 - [MDN Documentation](https://developer.mozilla.org/)
