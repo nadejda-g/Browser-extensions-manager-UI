@@ -1,0 +1,338 @@
+html {
+    min-height: 100%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: inherit;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    justify-content: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    src:
+            local("Noto Sans"),
+            url("/assets/fonts/static/NotoSans-Bold.ttf"),
+            url("/assets/fonts/static/NotoSans-Medium.ttf"),
+            url("/assets/fonts/static/NotoSans-Regular.ttf"),
+            url("/assets/fonts/NotoSans-VariableFont_wdth,wght.ttf"),
+            url("/assets/fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf");
+}
+
+body {
+    background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 5px 0px;
+}
+
+.navbar-logo svg {
+    margin-top: 3px;
+}
+
+.navbar-logo .logo-text {
+    fill: #091540;
+}
+
+.navbar button {
+    border: none;
+    border-radius: 10px;
+    padding-top: inherit;
+    cursor: pointer;
+}
+
+.navbar button img {
+    padding: 4px;
+}
+
+#cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+#cards-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#cards-header p {
+    font-family: Noto Sans;
+    font-size: 34px;
+    font-weight: 700;
+    color: #091540
+}
+
+.filter-buttons button {
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 5px 0px;
+    padding: 6px 13px;
+    margin: 0 3px;
+    color: #091540;
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-weight: 350;
+    cursor: pointer;
+}
+
+.filter-buttons button:hover {
+    background-color: hsl(3, 71%, 56%);
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.filter p {
+    padding: 0 5px;
+}
+
+.general-card {
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 5px 0px;
+}
+
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.card-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-description h3 {
+    margin: 0;
+    font-family: Noto Sans;
+    font-weight: 700;
+    color: #091540;
+}
+
+.card-description p {
+    margin: 0;
+    font-family: Noto Sans;
+    font-weight: 350;
+    color: #091540;
+    font-size: 14px;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-footer button {
+    border: 0.5px solid rgba(99, 99, 99, 0.2);
+    border-radius: 25px;
+    background-color: white;
+    padding: 6px 13px;
+    margin: 0 3px;
+    color: #091540;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 350;
+    cursor: pointer;
+}
+
+.card-footer .toggle{
+    transform: scale(0.5);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.toggle {
+    position: relative;
+    box-sizing: border-box;
+}
+.toggle input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+.toggle label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.toggle label:before {
+    content: '';
+    width: 75px;
+    height: 42px;
+    background: #ccc;
+    position: relative;
+    display: inline-block;
+    border-radius: 46px;
+    box-sizing: border-box;
+    transition: 0.2s ease-in;
+}
+.toggle label:after {
+    content: '';
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    left: 2px;
+    top: 2px;
+    z-index: 2;
+    background: #fff;
+    box-sizing: border-box;
+    transition: 0.2s ease-in;
+}
+.toggle input[type="checkbox"]:checked + label:before {
+    background: hsl(3, 71%, 56%);
+}
+.toggle input[type="checkbox"]:checked + label:after {
+    left: 35px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 991px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    #cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .container {
+        max-width: 100%;
+    }
+
+    #cards-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    #cards-header {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+#cards-container.only-active .is-inactive {
+    display: none;
+}
+
+#cards-container.only-inactive .is-active {
+    display: none;
+}
+
+#cards-container .general-card.is-removed {
+    display: none;
+}
+
+body.dark-mode {
+    background: linear-gradient(180deg, #040918 0%, #091540 100%);
+}
+
+.dark-mode .navbar-logo .logo-text {
+    fill: white;
+}
+
+.dark-mode .general-card {
+    background-color: hsl(225, 23%, 24%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 5px 0px;
+    border: 0.8px solid hsl(226, 11%, 37%);
+}
+
+.dark-mode #cards-header p {
+        color: white;
+}
+
+.dark-mode .card-description h3 {
+    color: white;
+}
+
+.dark-mode .card-description p {
+    color: hsl(0, 0%, 78%);
+}
+
+.dark-mode .card-footer button {
+    border: 0.8px solid hsl(226, 11%, 37%);
+    background-color: hsl(225, 23%, 24%);
+    color: white;
+}
+
+.dark-mode .navbar button {
+    background-color: hsl(226, 25%, 17%);
+}
+
+.dark-mode .navbar {
+    background-color: hsl(225, 23%, 24%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 5px 0px;
+}
+
+.dark-mode .attribution {
+    color: white;
+}
