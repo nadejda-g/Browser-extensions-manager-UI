@@ -1,5 +1,5 @@
 async function fetchData() {
-    const res = await fetch('/data.json')
+    const res = await fetch('data.json')
     const data = await res.json()
 
     renderCards(data)
@@ -57,10 +57,10 @@ function switchColors() {
 
     if (isDarkMode) {
         body.classList.remove('dark-mode')
-        image.src = '/assets/images/icon-moon.svg'
+        image.src = 'assets/images/icon-moon.svg'
     } else {
         body.classList.add('dark-mode')
-        image.src = '/assets/images/icon-sun.svg'
+        image.src = 'assets/images/icon-sun.svg'
     }
 }
 
