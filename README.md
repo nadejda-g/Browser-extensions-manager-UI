@@ -39,7 +39,7 @@ Users are able to:
 ### Links
 
 - Example URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp)
-- Solution/Live site URL: [Browser Extension Manager UI](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp)
+- Solution/Live site URL: [Browser Extension Manager UI](https://nadejda-g.github.io/Browser-extensions-manager-UI/)
 
 
 ## My process
