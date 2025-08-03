@@ -1,4 +1,6 @@
 # Browser extensions manager UI solution
+### https://nadejda-g.github.io/Browser-extensions-manager-UI/
+
 
 This is a solution to the [Browser extensions manager UI challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp). Frontend Mentor challenge helped me improve my coding skills by building this realistic project. 
 
